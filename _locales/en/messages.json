@@ -1,0 +1,10 @@
+{
+    "extension_name": {
+        "message": "YouTube Watch History Parser",
+        "description": ""
+    },
+    "extension_description": {
+        "message": "Parses your YouTube watch history",
+        "description": ""
+    }
+}

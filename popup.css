@@ -1,0 +1,126 @@
+body {
+    width: 400px;
+    margin: 0px auto;
+    background-color: #ffffff;
+    font-family: "Avenir Next", "Helvetica";
+    color: #000000;
+}
+
+#Content {
+    width: 350px;
+    margin: 0px auto;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+#Content #Header #Title {
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+#Content #loading {
+    margin: 0px auto;
+    width: 28px;
+}
+
+#Content #loginForm #errorMessage {
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+#Content #loginForm #form {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    space-between: 16px;
+}
+
+#Content #loginForm #form input {
+    flex-grow: 1;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 1px solid rgba(198.0, 198.0, 198.0, 1.0);
+    font-size: 18px;
+    font-family: "Avenir Next";
+}
+
+#Content #loginForm #form button {
+    margin-top: 16px;
+    height: 56px;
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: 600;
+    border: none;
+    font-size: 18px;
+    font-family: "Avenir Next";
+    text-transform: uppercase;
+    font-variant-caps: all-small-caps;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#Content #loginForm #form button.loggingIn {
+    background-color: #757575;
+}
+
+#Content #loginForm #form #button:hover {
+    background-color: #333333;
+}
+
+#Content .statusContainer {
+    text-align: center;
+}
+
+#Content #addingToQueue .spinner {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#Content .statusContainer #text {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+#Content #addedToQueue .completeCheckmark {
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url('images/complete-checkmark.png');
+    background-size: 28px 28px;
+}
+
+#Content #failedToAddToQueue .failedXMark {
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url('images/failed-xmark.png');
+    background-size: 28px 28px;
+}
+
+@media(-webkit-min-device-pixel-ratio: 2) {
+    #Content #addedToQueue .completeCheckmark {
+        background-image: url('images/complete-checkmark@2x.png');
+    }
+
+    #Content #failedToAddToQueue .failedXMark {
+        background-image: url('images/failed-xmark@2x.png');
+    }
+}
+
+@media(-webkit-min-device-pixel-ratio: 3) {
+    #Content #addedToQueue .completeCheckmark {
+        background-image: url('images/complete-checkmark@3x.png');
+    }
+
+    #Content #failedToAddToQueue .failedXMark {
+        background-image: url('images/failed-xmark@3x.png');
+    }
+}
